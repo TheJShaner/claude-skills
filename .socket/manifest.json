@@ -1,0 +1,27 @@
+{
+  "patches": {
+    "pkg:npm/mongoose@6.10.0": {
+      "uuid": "65c810f3-7e73-45d6-8bd2-3651e6b0fdbc",
+      "exportedAt": "Wed, 01 Apr 2026 02:20:15 GMT",
+      "files": {
+        "package/lib/helpers/populate/getModelsMapForPopulate.js": {
+          "beforeHash": "5af9d65abb53d1dc4c60fb96c3d0e44206e18099a8e5af5a5171d80e96008824",
+          "afterHash": "b83f3e3434004cc5b777d76a9241838c1f18bc639254a408998499b8705b544e"
+        }
+      },
+      "vulnerabilities": {
+        "GHSA-vg7j-7cwx-8wgw": {
+          "cves": [
+            "CVE-2025-23061"
+          ],
+          "summary": "Mongoose search injection vulnerability",
+          "severity": "CRITICAL",
+          "description": "Mongoose versions prior to 8.9.5, 7.8.4, and 6.13.6 are vulnerable to improper use of the `$where` operator. This vulnerability arises from the ability of the `$where` clause to execute arbitrary JavaScript code in MongoDB queries, potentially leading to code injection attacks and unauthorized access or manipulation of database data.\n\nNOTE: this issue exists because of an incomplete fix for CVE-2024-53900."
+        }
+      },
+      "description": "",
+      "license": "MIT",
+      "tier": "free"
+    }
+  }
+}
