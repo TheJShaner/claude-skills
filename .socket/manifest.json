@@ -1,0 +1,27 @@
+{
+  "patches": {
+    "pkg:npm/mongoose@6.10.0": {
+      "uuid": "cc30dd82-daad-4d5e-bc69-4844d09c75d5",
+      "exportedAt": "Wed, 01 Apr 2026 02:20:42 GMT",
+      "files": {
+        "package/lib/document.js": {
+          "beforeHash": "060cc25ccf81f56569a9be316bd8cf890232a4b5d6c5b70243abebf1fee13a00",
+          "afterHash": "b8624d6ac967c02133f29136ccf8c98d1c85d713fbc4332897fd914984844940"
+        }
+      },
+      "vulnerabilities": {
+        "GHSA-9m93-w8w6-76hh": {
+          "cves": [
+            "CVE-2023-3696"
+          ],
+          "summary": "Mongoose Prototype Pollution vulnerability",
+          "severity": "CRITICAL",
+          "description": "Prototype Pollution in GitHub repository automattic/mongoose prior to 7.3.3, 6.11.3, and 5.13.20."
+        }
+      },
+      "description": "",
+      "license": "MIT",
+      "tier": "free"
+    }
+  }
+}
